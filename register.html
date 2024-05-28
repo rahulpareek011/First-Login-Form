@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        h1 {
+            color: black;
+            background-color: rgb(255, 255, 255);
+            background-size: 150%;
+            background-position: center;
+            padding: 7px;
+            box-shadow: 0cap 0px 30px rgb(0, 0, 1);
+            border: none;
+            border-radius: 5px;
+            text-align: right;
+            font-size: smaller;
+        }
+
+        body {
+            margin-top: 0px;
+            margin-left:9cm;
+            padding: 20;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            overflow: auto;
+            /* Ensure the body can scroll */
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px; /* Add padding to ensure content is not cut off */
+        }
+
+        fieldset {
+            background-color: #182e43;
+            /* Solid white background for readability */
+            padding: 40px 20px;
+            /* Adjusted padding */
+            width: 100%;
+            max-width: 600px;
+            /* Limit the maximum width */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border: 1px solid #cbd5e0;
+            border-radius: 10px;
+            display: block;
+        }
+
+        legend {
+            font-weight: bolder;
+            color: #2d3748; /* Dark gray */
+            padding: 5px 10px;
+            font-size: 1.5em;
+        }
+
+
+        label {
+            display: block;
+            margin: 10px 0 5px 0;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="radio"],
+        input[type="submit"],
+        button {
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #cccccc;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+
+
+        input[type="radio"] {
+            width: 10px;
+            transform: scale(1.2);
+            margin-right: 15cm;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        button[type="button"] {
+            padding: 10px 20px;
+            background-color: #4c65af;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button[type="button"]:hover {
+            background-color: #455ca0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            fieldset {
+                padding: 20px 10px;
+            }
+
+            legend {
+                font-size: 1.2em;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            input[type="radio"],
+            input[type="submit"],
+            button {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            input[type="submit"],
+            button[type="button"] {
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            fieldset {
+                padding: 10px 5px;
+            }
+
+            legend {
+                font-size: 1em;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            input[type="radio"],
+            input[type="submit"],
+            button {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            input[type="submit"],
+            button[type="button"] {
+                padding: 6px 12px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend><h1>Register</h1></legend>
+            <form action="/register" method="post">
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" name="fullname" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="Username">Username:</label>
+                <input type="text" id="Username" name="Username" required> <br>
+
+                <label for="Password">Password:</label>
+                <input type="password" id="password" name="password" required> <br>
+
+                <label for="confirm password">Confirm Password:</label>
+                <input type="password" id="confirm password" name="confirm password" required> <br>
+
+                <label>Gender:</label>
+                <label for="male">Male:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+
+                <label for="female">Female:</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+
+                <input type="submit" value="register">
+                <button type="button" onclick="location.href='index.html'">Back to login</button>
+        </fieldset>
+    </div>
+    </form>
+</body>
+
+</html>

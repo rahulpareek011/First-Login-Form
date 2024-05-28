@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    background-size: 150%;
+    background-position: center;
+    padding: 7px;
+    box-shadow: 0cap 0px 30px rgb(0, 0, 1);
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    font-size: smaller;
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    backdrop-filter:blur(1px);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+fieldset {
+            background-color: #182e43;
+            /* Solid white background for readability */
+            padding: 30px 20px;
+            /* Adjusted padding */
+            width: 100%;
+            max-width: 600px;
+            /* Limit the maximum width */
+            box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border: 1px solid #cbd5e0;
+            border-radius: 10px;
+        }
+
+        legend {
+            font-weight: bolder;
+            color: #2d3748; /* Dark gray */
+            padding: 5px 10px;
+            font-size: 1.5em;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px 0;
+            text-align: left;
+            color: #ffffff;
+        }
+
+input[type="text"],
+input[type="password"],
+input[type="address"],
+input[type="radio-group"] {
+    width: calc(100% - 0px);
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+
+.bold-with-stroke {
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.radio-group {
+    text-align: left;
+    display: inline-block;
+    margin: 10px 0px;
+    font-weight: bolder;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 500px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="button"] {
+    padding: 10px 20px;
+    background-color: #4c65af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="button"]:hover {
+    background-color: #455ca0;
+}
+    </style>
+</head>
+
+<body>
+    <form action="/login" method="post">
+        <div class="center">
+            <fieldset>
+                <legend style="text-align: center;">
+                    <h1>login form</h1>
+                </legend>
+                <form>
+                    <label for="Username" class="bold-with-stroke">Username:</label>
+                    <input type="text" name="user"> <br> <br>
+
+                    <label for="passwords" class="bold-with-stroke">Password:</label>
+                    <input type="password"> <br> <br>
+
+                    <label for="address" class="bold-with-stroke">Address:</label>
+                    <input type="address" style="padding: 20px;"">
+
+                <div class=" radio-group">
+                    GENDER:
+                    <label for="male"></label>
+                    Male<input type="radio" name="gender" id="male">
+                    <label for="female"></label>
+                    Female<input type="radio" name="gender" id="female">
+        </div>
+        <label for="Login"></label>
+        <input type="submit" value="Login">
+
+        <button type="button" onclick="location.href='register.html'" Register><p>Don't have an account? (Register) </p></button>
+
+        </style>
+        </fieldset>
+    </form>
+    </div>
+</body>
+
+</html>
